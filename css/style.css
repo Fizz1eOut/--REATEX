@@ -78,7 +78,7 @@
 .header__buttons-register span {
   display: flex;
   align-items: center;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .header__buttons-register:hover {
   color: #FFF;
@@ -610,7 +610,9 @@
     padding-top: 30px;
   }
   .statistics__items {
-    
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start;
   }
   .get-started__button--about {
     width: 120px;
@@ -620,5 +622,198 @@
   }
   .statistics__number {
     font-size: 26px;
+  }
+}
+
+/* about-us */
+
+.about-us {
+  margin-top: 120px;
+}
+.about-us__container {
+}
+.about-us__body {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.about-us__image img {
+  max-width: 100%;
+}
+.about-us__content {
+  max-width: 390px;
+}
+.about-us__subtitle {
+}
+.about-us__title {
+  margin-bottom: 40px;
+}
+
+.about-us__row {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: start;
+  gap: 15px;
+}
+.about-us__row:last-child {
+  margin-bottom: 0px;
+}
+.about-us__img {
+  margin-top: 7px;
+}
+.about-us__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #424551;
+}
+.about-us__button {
+  margin-top: 30px;
+  width: 160px;
+}
+
+@media (max-width: 991.98px) {
+  .about-us__body {
+    align-items: center;
+    flex-direction: column;
+    row-gap: 40px;
+  }
+  .about-us__image {
+    order: 2;
+  }
+}
+@media (max-width: 767.98px) {
+  .about-us {
+    margin-top: 70px;
+  }
+}
+@media (max-width: 500.98px) {
+  .about-us {
+    margin-top: 50px;
+  }
+}
+
+/*  */
+.featured {
+  margin-top: 120px;
+}
+.featured__container {
+}
+.featured-header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+.featured-header__row {
+}
+.featured-header__subtitle {
+}
+.featured-header__title {
+}
+.featured-header__button {
+  width: 200px;
+}
+.featured__body {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+.featured__item {
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #E5E8ED;
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+.featured__item:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+  cursor: pointer;
+}
+.featured__image {
+}
+.featured__content {
+  padding: 30px;
+  max-width: 322px;
+}
+.featured__speciality {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+  color: #fff;
+}
+.featured__speciality--green {
+    max-width: 80px;
+    padding: 0px 5px;
+    background: #03CEA4;
+    border-radius: 4px;
+}
+.featured__speciality--blue {
+  max-width: 98px;
+  padding: 0px 5px;
+  background: #5A87FC;
+  border-radius: 4px;
+}
+.featured__speciality--yellow {
+  max-width: 112px;
+  padding: 0px 5px;
+  background: #F89828;
+  border-radius: 4px;
+}
+.featured__speciality--pink {
+  max-width: 60px;
+  padding: 0px 5px;
+  background: #F52F6E;
+  border-radius: 4px;
+}
+.featured__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+}
+.featured__price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #787A80;
+}
+.featured__price span {
+  padding-right: 5px;
+  font-weight: 700;
+  color: #FF4242;
+}
+
+@media (max-width: 767.98px) {
+  .featured-header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+  }
+}
+@media (max-width: 500.98px) {
+  .featured__item {
+    flex-direction: column;
+    max-width: 214px;
+  }
+  .featured__content {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .featured__price {
+    margin-top: auto;
+    font-size: 16px;
   }
 }

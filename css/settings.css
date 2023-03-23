@@ -66,12 +66,12 @@ body {
     }
 }
 
-@media (max-width: 519.98px) {
+@media (max-width: 500.98px) {
 
 }
 
 /* title */
-.sub-title {
+.subtitle {
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
@@ -88,7 +88,11 @@ body {
   text-transform: uppercase;
   font-family: 'Lato';
 }
-
+@media (max-width: 500.98px) {
+  .title {
+    font-size: 30px;
+  }
+}
 /* buttons */
 .button {
   width: 100px;
