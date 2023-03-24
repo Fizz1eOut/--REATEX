@@ -1037,6 +1037,9 @@
   .content-lectures__title {
     margin-bottom: 10px;
   }
+  .lectures__button {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 590.98px) {
