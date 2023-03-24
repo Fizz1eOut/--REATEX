@@ -934,6 +934,7 @@
   }
 }
 
+/* lectures  */
 .lectures {
   margin-top: 120px;
   background: #FEDDD1;
@@ -1015,6 +1016,27 @@
   max-width: 136px;
   width: 100%;
 }
+.lectures__bottom {
+}
+.bottom-lectures {
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.bottom-lectures__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  color: #1E212C;
+}
+.bottom-lectures__button {
+  max-width: 215px;
+  width: 100%;
+}
+
+
 
 @media (max-width: 767.98px) {
   .lectures {
@@ -1048,5 +1070,75 @@
   }
   .lectures__body {
     justify-content: center;
+  }
+}
+
+@media (max-width: 500.98px) {
+  .bottom-lectures {
+    flex-direction: column;
+    padding: 30px 0 60px;
+  }
+}
+
+/* certificate */
+.certificate {
+  margin-top: 120px;
+}
+.certificate__container {
+}
+.certificate__body {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.certificate__content {
+  max-width: 392px;
+}
+.certificate__subtitle {
+}
+.certificate__title {
+  text-transform: none;
+  margin-bottom: 50px;
+}
+.certificate__text {
+  margin-bottom: 30px;
+}
+.certificate__pictures {
+
+}
+.pictures {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
+.pictures__item {
+}
+.certificate__image {
+  max-width: 700px;
+}
+.certificate__image img {
+  max-width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .certificate {
+    margin-top: 70px;
+  }
+  .certificate__body {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+  }
+}
+@media (max-width: 500.98px) {
+  .certificate {
+    margin-top: 50px;
+  }
+  .certificate__title {
+    margin-bottom: 30px;
+  }
+  .pictures__item img {
+    max-width: 100%;
   }
 }
