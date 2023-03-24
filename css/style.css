@@ -933,3 +933,117 @@
     font-size: 25px;
   }
 }
+
+.lectures {
+  margin-top: 120px;
+  background: #FEDDD1;
+}
+.lectures__container {
+}
+.lectures__subtitle {
+  padding-top: 80px;
+  text-align: center;
+}
+.lectures__title {
+  text-align: center;
+  padding-bottom: 60px;
+}
+.lectures__body {
+
+}
+.lectures__item {
+  margin-bottom: 25px;
+  padding: 32px 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+.lectures__item:hover {
+  cursor: pointer;
+  box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.16), 0px 30px 24px -10px rgba(255, 63, 58, 0.1), 0px 12px 10px -6px rgba(255, 63, 58, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+}
+.lectures__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.lectures__date {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 130%;
+  letter-spacing: 1px;
+  color: #FF3F3A;
+}
+.lectures__row {
+  width: 100px;
+}
+.lectures__month {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1E212C;
+}
+.lectures__time {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #787A80;
+}
+.lectures__content {
+  max-width: 757px;
+  width: 100%;
+}
+.content-lectures {
+
+}
+.content-lectures__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1E212C;
+}
+.content-lectures__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #787A80;
+}
+.lectures__button {
+  max-width: 136px;
+  width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .lectures {
+    margin-top: 70px;
+  }
+  .lectures__item {
+    flex-direction: column;
+    max-width: 280px;
+    padding: 32px 20px;
+  }
+  .lectures__body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  .lectures__content {
+    max-width: 280px;
+  }
+  .content-lectures__title {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 590.98px) {
+  .lectures {
+    margin-top: 50px;
+  }
+  .lectures__body {
+    justify-content: center;
+  }
+}
