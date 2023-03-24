@@ -620,9 +620,7 @@
   .get-started__button--courses {
     width: 150px;
   }
-  .statistics__number {
-    font-size: 26px;
-  }
+  
 }
 
 /* about-us */
@@ -763,7 +761,7 @@
   border-radius: 4px;
 }
 .featured__speciality--yellow {
-  max-width: 112px;
+  max-width: 120px;
   padding: 0px 5px;
   background: #F89828;
   border-radius: 4px;
@@ -793,6 +791,9 @@
 }
 
 @media (max-width: 767.98px) {
+  .featured {
+    margin-top: 70px;
+  }
   .featured-header {
     flex-direction: column;
     justify-content: center;
@@ -801,6 +802,9 @@
   }
 }
 @media (max-width: 500.98px) {
+  .featured {
+    margin-top: 50px;
+  }
   .featured__item {
     flex-direction: column;
     max-width: 214px;
@@ -815,5 +819,117 @@
   .featured__price {
     margin-top: auto;
     font-size: 16px;
+  }
+}
+
+/* our-benefits */
+.our-benefits {
+  margin-top: 120px;
+}
+.our-benefits__container {
+}
+.our-benefits__subtitle {
+  text-align: center;
+}
+.our-benefits__title {
+  text-align: center;
+}
+
+.tabs {
+  margin-top: 60px;
+}
+.tabs__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+.tabs__item {
+
+}
+.tabs__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 46px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  color: #9A9CA5;
+  background-color: #fff;
+  font-family: 'Lato';
+  cursor: pointer;
+}
+.tabs__btn span {
+  margin-top: 5px;
+  margin-right: 8px;
+}
+.tabs__btn--active {
+  color: #FF3F3A;
+  border: 1px solid #FF3F3A;
+  border-radius: 4px;
+}
+.tabs__btn--active span  path {
+  fill: #FF3F3A;
+}
+.tabs__content {
+  display: none;
+}
+.tabs__content--active {
+  display: block;
+}
+
+.content {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content__item {
+  max-width: 495px;
+}
+.content__title {
+  margin-bottom: 25px;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 130%;
+  color: #1E212C;
+}
+.content__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #424551;
+}
+.content__image img {
+  max-width: 100%;
+}
+
+@media (max-width: 991.98px) {
+  .tabs__list {
+    justify-content: center;
+  }
+  .content {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+}
+@media (max-width: 767.98px) {
+  .our-benefits {
+    margin-top: 70px;
+  }
+  .tabs__btn {
+    width: 200px;
+  }
+}
+
+@media (max-width: 500.98px) {
+  .our-benefits {
+    margin-top: 50px;
+  }
+  .content__title {
+    font-size: 25px;
   }
 }
