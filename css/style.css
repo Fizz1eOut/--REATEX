@@ -1868,17 +1868,3 @@
   color: #BB8C5F;
   border: none;
 }
-
-/*  */
-.box {
-  transform: translateX(200%);
-  transition: transform 0.6s ease 0s;
-}
-
-.box:nth-of-type(even) {
-  transform: translateX(-200%);
-}
-
-.box.show {
-  transform: translateX(0);
-}
