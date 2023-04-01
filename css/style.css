@@ -45,6 +45,10 @@
   color: #FF3F3A;
 }
 
+.nav__link--active {
+  color: #FF3F3A;
+}
+
 .header__buttons {
   display: flex;
   justify-content: flex-end;
@@ -78,7 +82,6 @@
 .header__buttons-register span {
   display: flex;
   align-items: center;
-  transition: all 0.2s ease-in-out;
 }
 .header__buttons-register:hover {
   color: #FFF;
