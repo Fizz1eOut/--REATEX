@@ -714,6 +714,9 @@
 }
 .featured-header__button {
   width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .featured__body {
   margin-top: 60px;
